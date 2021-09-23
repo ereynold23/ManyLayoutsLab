@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="@dimen/bigger"
+        android:layout_height="@dimen/biggest"
+        android:background="@color/teal_700"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size"
+        app:layout_constraintBottom_toBottomOf="@id/tiny"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="213dp"
+        android:layout_height="209dp"
+        android:layout_marginTop="220dp"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="156dp"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:text=":D"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <TextView
+        android:layout_width="@dimen/bigger"
+        android:layout_height="@dimen/bigger"
+        android:gravity="center"
+        android:textSize="@dimen/size"
+        android:textColor="@color/white"
+        android:background="@color/teal_200"
+        android:text=":)"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tiny"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/width"
+        android:gravity="center"
+        android:textSize="@dimen/size"
+        android:textColor="@color/white"
+        android:background="@color/purple_200"
+        android:text=":3"
+        app:layout_constraintTop_toTopOf="@id/center"
+        app:layout_constraintLeft_toLeftOf="@id/center"
+        app:layout_constraintRight_toRightOf="@id/center"
+        app:layout_constraintBottom_toBottomOf="@id/center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
